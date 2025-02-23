@@ -32,10 +32,6 @@
     "configuration": {
       "title": "MathJax Hightlight",
       "properties": {
-        "mathjax-highlight.enable": {
-          "type": "boolean",
-          "default": true
-        },
         "mathjax-highlight.debug": {
           "type": "boolean",
           "default": false

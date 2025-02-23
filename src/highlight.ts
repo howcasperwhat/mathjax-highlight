@@ -7,8 +7,6 @@ import { config } from './config'
 // eslint-disable-next-line unused-imports/no-unused-vars
 export function useHighlight(context: ExtensionContext) {
   watch(() => config.scopes, () => {
-    if (!config.enable)
-      return
     workspace.fs.readFile(
       Uri.joinPath(
         extensionContext.value!.extension.extensionUri,
@@ -23,7 +21,7 @@ export function useHighlight(context: ExtensionContext) {
         const n = {
           ...o,
           _scopes: ns,
-          injectionSelector: `L:${ns.join(',')} -meta.embedded.litemath.markdown`,
+          injectionSelector: ns.length ? `L:${ns.join(',')} -meta.embedded.litemath.markdown` : '',
         }
         workspace.fs.writeFile(
           Uri.joinPath(extensionContext.value!.extension.extensionUri, 'syntaxes', 'formula.json'),

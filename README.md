@@ -34,7 +34,6 @@ A VSCode Extensions to hightlight MathJax formulas.
 
 | Key                        | Description                        | Type      | Default                                                   |
 | -------------------------- | ---------------------------------- | --------- | --------------------------------------------------------- |
-| `mathjax-highlight.enable` |                                    | `boolean` | `true`                                                    |
 | `mathjax-highlight.debug`  |                                    | `boolean` | `false`                                                   |
 | `mathjax-highlight.scopes` | Enable hightlight in these scopes. | `array`   | `["source.c","source.cpp","source.java","source.python"]` |
 | `mathjax-highlight.symbol` | Identifier symbol of formula code. | `string`  | `"$"`                                                     |
