@@ -3,7 +3,7 @@
   "name": "mathjax-highlight",
   "displayName": "MathJax Hightlight",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Highlight mathJax formulas.",
   "author": "Casper Huang",
   "repository": {
@@ -77,7 +77,9 @@
       {
         "path": "./syntaxes/formula.json",
         "scopeName": "formula.injection",
-        "injectTo": ["source"]
+        "injectTo": [
+          "source"
+        ]
       }
     ]
   },
