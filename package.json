@@ -1,0 +1,110 @@
+{
+  "publisher": "howcasperwhat",
+  "name": "mathjax-highlight",
+  "displayName": "MathJax Hightlight",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Highlight mathJax formulas.",
+  "author": "Casper Huang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/howcasperwhat/mathjax-highlight.git"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "main": "./dist/index.cjs",
+  "icon": "assets/logo.png",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "mathhl.update-textmate",
+        "category": "Mathhl",
+        "title": "Update Textmate"
+      }
+    ],
+    "configuration": {
+      "title": "MathJax Hightlight",
+      "properties": {
+        "mathjax-highlight.enable": {
+          "type": "boolean",
+          "default": true
+        },
+        "mathjax-highlight.debug": {
+          "type": "boolean",
+          "default": false
+        },
+        "mathjax-highlight.scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "source.c",
+            "source.cpp",
+            "source.java",
+            "source.python"
+          ],
+          "description": "Enable hightlight in these scopes."
+        },
+        "mathjax-highlight.symbol": {
+          "type": "string",
+          "enum": [
+            "$",
+            "#",
+            "@"
+          ],
+          "default": "$",
+          "description": "Identifier symbol of formula code."
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "markdown-litemath",
+        "aliases": [],
+        "extensions": []
+      }
+    ],
+    "grammars": [
+      {
+        "language": "markdown-litemath",
+        "scopeName": "text.html.markdown.litemath",
+        "path": "./syntaxes/litemath.json"
+      },
+      {
+        "path": "./syntaxes/formula.json",
+        "scopeName": "formula.injection",
+        "injectTo": ["source"]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "npm run build --watch",
+    "prepare": "npm run update",
+    "lint": "eslint .",
+    "update": "vscode-ext-gen --output src/generated/meta.ts",
+    "pack": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.0",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.84.0",
+    "@vscode/vsce": "^3.2.2",
+    "eslint": "^9.20.0",
+    "jiti": "^2.4.2",
+    "reactive-vscode": "^0.2.10",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vscode-ext-gen": "^1.0.0"
+  }
+}
