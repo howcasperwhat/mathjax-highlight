@@ -16,7 +16,7 @@
 </p>
 
 ## Introduction
-A VSCode Extensions to hightlight MathJax formulas.
+A VSCode Extensions to highlight MathJax formulas.
 
 > [!WARNING]
 > This is an experimental extension for [Comment Formula](https://github.com/howcasperwhat/comment-formula).
@@ -35,7 +35,7 @@ A VSCode Extensions to hightlight MathJax formulas.
 | Key                        | Description                        | Type      | Default                                                   |
 | -------------------------- | ---------------------------------- | --------- | --------------------------------------------------------- |
 | `mathjax-highlight.debug`  |                                    | `boolean` | `false`                                                   |
-| `mathjax-highlight.scopes` | Enable hightlight in these scopes. | `array`   | `["source.c","source.cpp","source.java","source.python"]` |
+| `mathjax-highlight.scopes` | Enable highlight in these scopes. | `array`   | `["source.c","source.cpp","source.java","source.python"]` |
 | `mathjax-highlight.symbol` | Identifier symbol of formula code. | `string`  | `"$"`                                                     |
 
 <!-- configs -->

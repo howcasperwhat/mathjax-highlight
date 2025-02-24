@@ -1,7 +1,7 @@
 {
   "publisher": "howcasperwhat",
   "name": "mathjax-highlight",
-  "displayName": "MathJax Hightlight",
+  "displayName": "MathJax Highlight",
   "type": "module",
   "version": "0.0.2",
   "description": "Highlight mathJax formulas.",
@@ -30,7 +30,7 @@
       }
     ],
     "configuration": {
-      "title": "MathJax Hightlight",
+      "title": "MathJax Highlight",
       "properties": {
         "mathjax-highlight.debug": {
           "type": "boolean",
@@ -47,7 +47,7 @@
             "source.java",
             "source.python"
           ],
-          "description": "Enable hightlight in these scopes."
+          "description": "Enable highlight in these scopes."
         },
         "mathjax-highlight.symbol": {
           "type": "string",
