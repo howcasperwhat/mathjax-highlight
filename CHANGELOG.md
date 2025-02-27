@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-02-27: v0.1.0
+### Miscellaneous
+1. Remove `symbol` config option.
+
 ## 2025-02-24: v0.0.3
 ### Miscellaneous
 1. Update docs.

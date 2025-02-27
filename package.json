@@ -4,7 +4,7 @@
   "displayName": "MathJax Highlight",
   "type": "module",
   "version": "0.0.3",
-  "description": "Highlight mathJax formulas.",
+  "description": "Highlight MathJax formulas.",
   "author": "Casper Huang",
   "repository": {
     "type": "git",
@@ -48,16 +48,6 @@
             "source.python"
           ],
           "description": "Enable highlight in these scopes."
-        },
-        "mathjax-highlight.symbol": {
-          "type": "string",
-          "enum": [
-            "$",
-            "#",
-            "@"
-          ],
-          "default": "$",
-          "description": "Identifier symbol of formula code."
         }
       }
     },
