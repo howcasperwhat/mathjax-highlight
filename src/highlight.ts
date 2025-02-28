@@ -1,15 +1,14 @@
 import type { ExtensionContext } from 'vscode'
 import { Buffer } from 'node:buffer'
-import { extensionContext, watch } from 'reactive-vscode'
+import { watch } from 'reactive-vscode'
 import { commands, Uri, window, workspace } from 'vscode'
 import { config } from './config'
 
-// eslint-disable-next-line unused-imports/no-unused-vars
 export function useHighlight(context: ExtensionContext) {
   watch(() => config.scopes, () => {
     workspace.fs.readFile(
       Uri.joinPath(
-        extensionContext.value!.extension.extensionUri,
+        context.extension.extensionUri,
         'syntaxes',
         'formula.json',
       ),
@@ -24,7 +23,7 @@ export function useHighlight(context: ExtensionContext) {
           injectionSelector: ns.length ? `L:${ns.join(',')} -meta.embedded.litemath.markdown` : '',
         }
         workspace.fs.writeFile(
-          Uri.joinPath(extensionContext.value!.extension.extensionUri, 'syntaxes', 'formula.json'),
+          Uri.joinPath(context.extension.extensionUri, 'syntaxes', 'formula.json'),
           new Uint8Array(Buffer.from(`${JSON.stringify(n, null, 2)}\n`)),
         ).then(() => {
           window.showInformationMessage(
