@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 2025-03-04: v0.1.1
+1. Merged into [Comment Formula](https://github.com/howcasperwhat/comment-formula), update docs.
+
 ## 2025-02-27: v0.1.0
 ### Miscellaneous
 1. Remove `symbol` config option.

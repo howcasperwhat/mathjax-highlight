@@ -18,10 +18,8 @@
 ## Introduction
 A VSCode Extensions to highlight MathJax formulas.
 
-> [!WARNING]
-> This is an experimental extension for [Comment Formula](https://github.com/howcasperwhat/comment-formula).
->
-> We may merge them into [Comment Formula](https://github.com/howcasperwhat/comment-formula) in the future.
+> [!TIP]
+> Now this feature is merged into [Comment Formula](https://github.com/howcasperwhat/comment-formula).
 
 ## Feature and Usage
 <p align="center">
