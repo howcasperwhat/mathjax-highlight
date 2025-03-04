@@ -30,11 +30,10 @@ A VSCode Extensions to highlight MathJax formulas.
 
 <!-- configs -->
 
-| Key                        | Description                        | Type      | Default                                                   |
-| -------------------------- | ---------------------------------- | --------- | --------------------------------------------------------- |
-| `mathjax-highlight.debug`  |                                    | `boolean` | `false`                                                   |
+| Key                        | Description                       | Type      | Default                                                   |
+| -------------------------- | --------------------------------- | --------- | --------------------------------------------------------- |
+| `mathjax-highlight.debug`  |                                   | `boolean` | `false`                                                   |
 | `mathjax-highlight.scopes` | Enable highlight in these scopes. | `array`   | `["source.c","source.cpp","source.java","source.python"]` |
-| `mathjax-highlight.symbol` | Identifier symbol of formula code. | `string`  | `"$"`                                                     |
 
 <!-- configs -->
 
