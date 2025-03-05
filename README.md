@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/logo.png?raw=true" style="width:160px;" />
+<img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/logo.png?raw=true" width="120" alt="logo" />
 </p>
 
 <h1 align="center">MathJax Highlight</h1>
@@ -18,12 +18,14 @@
 ## Introduction
 A VSCode Extensions to highlight MathJax formulas.
 
-> [!TIP]
-> Now this feature is merged into [Comment Formula](https://github.com/howcasperwhat/comment-formula).
+> [!WARNING]
+> `Reload Window` Message Trigger:
+> 1. Update this extension when `scopes` have been changed before.
+> 2. Change `scopes` to different value.
 
 ## Feature and Usage
 <p align="center">
-<img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/feature.png?raw=true" style="width: 80%" />
+<img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/feature.png?raw=true" alt="feature" />
 </p>
 
 ## Configurations
@@ -37,10 +39,14 @@ A VSCode Extensions to highlight MathJax formulas.
 
 <!-- configs -->
 
-> [!TIP]
 > Feel free to [new an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
+
+## Reference
+[VSCode Markdown](https://github.com/yzhang-gh/vscode-markdown) | [VSCode Markdown Math](https://github.com/microsoft/vscode/tree/main/extensions/markdown-math)
 
 ## License
 Code is under the [MIT License](https://github.com/howcasperwhat/mathjax-highlight/blob/main/LICENSE).
 
 Logo using [carbon:function](https://github.com/carbon-design-system/carbon) as an element is under the [Apache License 2.0](https://github.com/carbon-design-system/carbon/blob/main/LICENSE).
+
+Fonts used in feature image are `Dancing Script` (for `Before` and `After`) under the [Open Font License](https://openfontlicense.org/open-font-license-official-text/) and `Input` (for code) under the [Input Font License](https://input.djr.com/license/)
