@@ -20,12 +20,13 @@ A VSCode Extensions to highlight MathJax formulas.
 
 > [!WARNING]
 > `Reload Window` Message Trigger:
-> 1. Update this extension when `scopes` have been changed before.
-> 2. Change `scopes` to different value.
+> 1. Change `scopes` to different value.
+> 2. Update this extension when `scopes` have been changed before.
 
 ## Feature and Usage
 <p align="center">
 <img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/feature.png?raw=true" alt="feature" />
+<font color="gray"> syntax color is based on theme </font>
 </p>
 
 ## Configurations
