@@ -1,6 +1,10 @@
 # ChangeLog
+## 2025-03-08: v0.1.2
+### Feature
+1. Support quick comment using default keybinding for formula scopes.
 
 ## 2025-03-04: v0.1.1
+### Miscellaneous
 1. Merged into [Comment Formula](https://github.com/howcasperwhat/comment-formula), update docs.
 
 ## 2025-02-27: v0.1.0
