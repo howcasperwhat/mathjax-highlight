@@ -68,8 +68,14 @@
         "path": "./syntaxes/formula.json",
         "scopeName": "formula.injection",
         "injectTo": [
-          "source"
-        ]
+          "source.c",
+          "source.cpp",
+          "source.java",
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.litemath.markdown": "latex"
+        }
       }
     ]
   },
