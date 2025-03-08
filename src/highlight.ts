@@ -43,7 +43,7 @@ export function useHighlight(context: ExtensionContext) {
       formulaJSON._scopes = configScopes
       formulaJSON.injectionSelector = [
         `L:${configScopes.join(',')}`,
-        '-meta.embedded.litemath.markdown'
+        '-meta.embedded.litemath.markdown',
       ].join(' ')
       await writeFile(
         formulaPath,
@@ -54,7 +54,8 @@ export function useHighlight(context: ExtensionContext) {
     }
     (isChnaged.value && (await window.showInformationMessage(
       'You have updated the scopes should be highlighted, please reload the window to take effect.',
-      'Reload Window')) == 'Reload Window')
+      'Reload Window',
+    )) === 'Reload Window')
       ? commands.executeCommand('workbench.action.reloadWindow')
       : config.debug && window.showInformationMessage('No changes detected.')
   }, { immediate: true })
