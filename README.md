@@ -40,6 +40,8 @@ A VSCode Extensions to highlight MathJax formulas.
 
 <!-- configs -->
 
+> See [Comment Formula](https://github.com/howcasperwhat/comment-formula) to configure `scopes` in `settings.json`.
+
 > Feel free to [new an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
 
 ## Reference
