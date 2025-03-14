@@ -47,7 +47,7 @@ Set the scopes in your **User Settings** (not workspace) to avoid repeated reloa
 > 1. Change `scopes` to different value.
 > 2. Update this extension when `scopes` have been changed before.
 
-> Feel free to [new an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
+> Feel free to [open an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
 
 ## Reference
 [VSCode Markdown](https://github.com/yzhang-gh/vscode-markdown) | [VSCode Markdown Math](https://github.com/microsoft/vscode/tree/main/extensions/markdown-math)
