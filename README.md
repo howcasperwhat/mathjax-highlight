@@ -44,7 +44,7 @@ Set the scopes in your **User Settings** (not workspace) to avoid repeated reloa
 > [!WARNING]
 > Changes take effect after reloading the editor due to VS Code limitations.
 >
-> `Reload Window` Message Trigger:
+> `Reload Window` Message Triggers:
 > 1. Change `scopes` to different value.
 > 2. Update this extension when `scopes` have been changed before.
 
