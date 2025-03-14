@@ -28,7 +28,7 @@ A VSCode Extensions to highlight MathJax formulas.
 
 Set the scopes in your **User Settings** (not workspace) to avoid repeated reload prompts. Use the command `Developer: Inspect Editor Tokens and Scopes` to determine the global scope for your language (e.g., 'source.python' for `python`, 'source.js' for `javascript`, 'source' for all source languages).
 
-**User Settings Example:**
+**Default `scopes`:**
 
 ```json
 {
