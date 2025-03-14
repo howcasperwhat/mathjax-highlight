@@ -18,11 +18,6 @@
 ## Introduction
 A VSCode Extensions to highlight MathJax formulas.
 
-> [!WARNING]
-> `Reload Window` Message Trigger:
-> 1. Change `scopes` to different value.
-> 2. Update this extension when `scopes` have been changed before.
-
 ## Feature and Usage
 <p align="center">
 <img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/feature.png?raw=true" alt="feature" />
@@ -31,16 +26,26 @@ A VSCode Extensions to highlight MathJax formulas.
 
 ## Configurations
 
-<!-- configs -->
+Set the scopes in your **User Settings** (not workspace) to avoid repeated reload prompts. Use the command `Developer: Inspect Editor Tokens and Scopes` to determine the global scope for your language (e.g., 'source.python' for `python`, 'source.js' for `javascript`, 'source' for all source languages).
 
-| Key                        | Description                       | Type      | Default                                                   |
-| -------------------------- | --------------------------------- | --------- | --------------------------------------------------------- |
-| `mathjax-highlight.debug`  |                                   | `boolean` | `false`                                                   |
-| `mathjax-highlight.scopes` | Enable highlight in these scopes. | `array`   | `["source.c","source.cpp","source.java","source.python"]` |
+**User Settings Example:**
 
-<!-- configs -->
+```json
+{
+  "mathjax-highlight.scopes": [
+    "source.c",
+    "source.cpp",
+    "source.java",
+    "source.python"
+  ]
+}
+```
 
-> See [Comment Formula](https://github.com/howcasperwhat/comment-formula) to configure `scopes` in `settings.json`.
+> [!WARNING]
+> Changes take effect after reloading the editor due to VS Code limitations.
+> `Reload Window` Message Trigger:
+> 1. Change `scopes` to different value.
+> 2. Update this extension when `scopes` have been changed before.
 
 > Feel free to [new an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
 
