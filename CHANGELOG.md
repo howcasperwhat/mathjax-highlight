@@ -1,4 +1,9 @@
 # ChangeLog
+
+## 2025-04-01: v0.1.3
+### Fix
+1. highlight bleeding fixes howcasperwhat/comment-formula#11
+
 ## 2025-03-08: v0.1.2
 ### Feature
 1. Support quick comment using default keybinding for formula scopes.
