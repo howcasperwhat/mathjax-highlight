@@ -20,32 +20,32 @@ export function createTextMateLanguage(lang: string, options: AdaptedRegExpOptio
       opt.breakable
         ? {
           // name: 'markup.litemath',
-          begin: opt.begin,
-          end: opt.end,
-          beginCaptures: {
-            0: { name: 'punctuation.definition.litemath.begin' },
-          },
-          endCaptures: {
-            0: { name: 'punctuation.definition.litemath.end' },
-          },
-          patterns: [
-            {
-              include: 'text.html.markdown.litemath#litemath',
-            }
-          ]
-        }
+            begin: opt.begin,
+            end: opt.end,
+            beginCaptures: {
+              0: { name: 'punctuation.definition.litemath.begin' },
+            },
+            endCaptures: {
+              0: { name: 'punctuation.definition.litemath.end' },
+            },
+            patterns: [
+              {
+                include: 'text.html.markdown.litemath#litemath',
+              },
+            ],
+          }
         : {
-        // name: 'markup.litemath.markdown',
-        match: `(${opt.begin})(.+?)(${opt.end})`,
-        captures: {
-          1: { name: 'punctuation.definition.litemath.begin.markdown' },
-          2: {
-            name: 'meta.embedded.litemath.markdown',
-            patterns: [{ include: 'text.html.markdown.litemath#litemath' }],
+            // name: 'markup.litemath.markdown',
+            match: `(${opt.begin})(.+?)(${opt.end})`,
+            captures: {
+              1: { name: 'punctuation.definition.litemath.begin.markdown' },
+              2: {
+                name: 'meta.embedded.litemath.markdown',
+                patterns: [{ include: 'text.html.markdown.litemath#litemath' }],
+              },
+              3: { name: 'punctuation.definition.litemath.end.markdown' },
+            },
           },
-          3: { name: 'punctuation.definition.litemath.end.markdown' },
-        },
-      },
     ]))),
   }
 }
