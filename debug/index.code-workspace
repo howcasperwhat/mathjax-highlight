@@ -51,6 +51,10 @@
           "breakable": false,
         }
       ]
+    },
+    "mathjax-highlight.map": {
+      "javascript": "js",
+      "py": "python",
     }
   }
 }

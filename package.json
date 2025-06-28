@@ -22,32 +22,15 @@
     "onStartupFinished"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "mathhl.update-textmate",
-        "category": "Mathhl",
-        "title": "Update Textmate"
-      }
-    ],
     "configuration": {
       "title": "MathJax Highlight",
       "properties": {
-        "mathjax-highlight.debug": {
-          "type": "boolean",
-          "default": false
-        },
-        "mathjax-highlight.scopes": {
-          "type": "array",
-          "items": {
-            "type": "string"
+        "mathjax-highlight.map": {
+          "type": "object",
+          "default": {
+            "javascript": "js"
           },
-          "default": [
-            "source.c",
-            "source.cpp",
-            "source.java",
-            "source.python"
-          ],
-          "description": "Enable highlight in these scopes."
+          "description": "Map language ids to scope source names."
         }
       }
     },
@@ -65,12 +48,9 @@
         "path": "./syntaxes/litemath.json"
       },
       {
-        "path": "./syntaxes/formula.json",
-        "scopeName": "formula.injection",
+        "path": "./syntaxes/formula.python.json",
+        "scopeName": "formula.injection.python",
         "injectTo": [
-          "source.c",
-          "source.cpp",
-          "source.java",
           "source.python"
         ],
         "embeddedLanguages": {
@@ -85,6 +65,7 @@
     "dev": "npm run build --watch",
     "prepare": "npm run update",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "update": "vscode-ext-gen --output src/generated/meta.ts",
     "pack": "vsce package",
     "publish": "vsce publish"
