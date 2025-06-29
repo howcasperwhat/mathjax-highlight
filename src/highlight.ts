@@ -33,6 +33,6 @@ export function useHighlight() {
         JSONBuffer(pack),
       )
     },
-    { immediate: true }
+    { immediate: true },
   )
 }
