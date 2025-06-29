@@ -1,0 +1,96 @@
+{
+  "scopeName": "formula.injection.python",
+  "injectionSelector": "source.python -meta.embedded.litemath.markdown",
+  "patterns": [
+    {
+      "include": "#formula0"
+    },
+    {
+      "include": "#formula1"
+    },
+    {
+      "include": "#formula2"
+    },
+    {
+      "include": "#formula3"
+    }
+  ],
+  "repository": {
+    "formula0": {
+      "begin": "\\$\\$",
+      "end": "(?<!\\\\)\\$\\$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.litemath.begin"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.litemath.end"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.markdown.litemath#litemath"
+        }
+      ]
+    },
+    "formula1": {
+      "begin": "@@",
+      "end": "(?<!\\\\)@@",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.litemath.begin"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.litemath.end"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.markdown.litemath#litemath"
+        }
+      ]
+    },
+    "formula2": {
+      "match": "(\\$)(.+?)((?<!\\\\)\\$)",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.litemath.begin.markdown"
+        },
+        "2": {
+          "name": "meta.embedded.litemath.markdown",
+          "patterns": [
+            {
+              "include": "text.html.markdown.litemath#litemath"
+            }
+          ]
+        },
+        "3": {
+          "name": "punctuation.definition.litemath.end.markdown"
+        }
+      }
+    },
+    "formula3": {
+      "match": "(@)(.+?)((?<!\\\\)@)",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.litemath.begin.markdown"
+        },
+        "2": {
+          "name": "meta.embedded.litemath.markdown",
+          "patterns": [
+            {
+              "include": "text.html.markdown.litemath#litemath"
+            }
+          ]
+        },
+        "3": {
+          "name": "punctuation.definition.litemath.end.markdown"
+        }
+      }
+    }
+  }
+}
