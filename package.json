@@ -3,7 +3,7 @@
   "name": "mathjax-highlight",
   "displayName": "MathJax Highlight",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Highlight MathJax formulas.",
   "author": "Casper Huang",
   "repository": {
