@@ -21,32 +21,23 @@ A VSCode Extensions to highlight MathJax formulas.
 ## Feature and Usage
 <p align="center">
 <img src="https://github.com/howcasperwhat/mathjax-highlight/blob/main/assets/feature.png?raw=true" alt="feature" />
-<font color="gray"> syntax color is based on theme </font>
 </p>
 
 ## Configurations
 
-Set the scopes in your **User Settings** (not workspace) to avoid repeated reload prompts. Use the command `Developer: Inspect Editor Tokens and Scopes` to determine the global scope for your language (e.g., 'source.python' for `python`, 'source.js' for `javascript`, 'source' for all source languages).
+> [!WARNING]
+> Reload the Window to make the highlight work when update `comment-formula.languages` or `comment-formula.capture`.
 
-**Default `scopes`:**
+Some language ids are not the same as the scope names, so you should set `mathjax-highlight.map` to map the language ids to the scope names.
 
+For example:
 ```json
 {
-  "mathjax-highlight.scopes": [
-    "source.c",
-    "source.cpp",
-    "source.java",
-    "source.python"
-  ]
+  "mathjax-highlight.map": {
+    "javascript": "js"
+  }
 }
 ```
-
-> [!WARNING]
-> Changes take effect after reloading the editor due to VS Code limitations.
->
-> `Reload Window` Message Triggers:
-> 1. Change `scopes` to different value.
-> 2. Update this extension when `scopes` have been changed before.
 
 > Feel free to [open an issue](https://github.com/howcasperwhat/mathjax-highlight/issues/new) if you encounter any problem or have any suggestion.
 
