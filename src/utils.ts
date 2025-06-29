@@ -19,7 +19,6 @@ export function createTextMateLanguage(lang: string, options: AdaptedRegExpOptio
       `formula${idx}`,
       opt.breakable
         ? {
-          // name: 'markup.litemath',
             begin: opt.begin,
             end: opt.end,
             beginCaptures: {
@@ -35,7 +34,6 @@ export function createTextMateLanguage(lang: string, options: AdaptedRegExpOptio
             ],
           }
         : {
-            // name: 'markup.litemath.markdown',
             match: `(${opt.begin})(.+?)(${opt.end})`,
             captures: {
               1: { name: 'punctuation.definition.litemath.begin.markdown' },
