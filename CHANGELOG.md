@@ -1,5 +1,12 @@
 # ChangeLog
 
+## 2025-06-29: v1.0.3
+### Breaking Changes
+1. Remove `mathjax-highlight.scopes` option, Now this extension is just a plugin for [Comment Formula](https://github.com/howcasperwhat/comment-formula), and can only be used in combination.
+2. Remove `mathjax-highlight.debug`.
+### Feature
+1. Detect config options of `comment-formula` and generate syntax automatically.
+
 ## 2025-04-01: v0.1.3
 ### Fix
 1. highlight bleeding fixes howcasperwhat/comment-formula#11
