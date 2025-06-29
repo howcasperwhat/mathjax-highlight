@@ -74,6 +74,22 @@
           "name": "variable.other.litemath"
         },
         {
+          "match": "\\\\\\(",
+          "name": "variable.other.litemath"
+        },
+        {
+          "match": "\\\\\\)",
+          "name": "variable.other.litemath"
+        },
+        {
+          "match": "\\\\\\[",
+          "name": "variable.other.litemath"
+        },
+        {
+          "match": "\\\\\\]",
+          "name": "variable.other.litemath"
+        },
+        {
           "match": "(([0-9]*[\\.][0-9]+)|[0-9]+)",
           "name": "constant.numeric.litemath.tex"
         },
@@ -84,6 +100,30 @@
         {
           "match": "[a-zA-Z]+",
           "name": "variable.other.litemath"
+        },
+        {
+          "match": "\\(",
+          "name": "punctuation.definition.group.begin.litemath"
+        },
+        {
+          "match": "\\)",
+          "name": "punctuation.definition.group.end.litemath"
+        },
+        {
+          "match": "\\[",
+          "name": "punctuation.definition.bracket.begin.litemath"
+        },
+        {
+          "match": "\\]",
+          "name": "punctuation.definition.bracket.end.litemath"
+        },
+        {
+          "match": "\\{",
+          "name": "punctuation.definition.brace.begin.litemath"
+        },
+        {
+          "match": "\\}",
+          "name": "punctuation.definition.brace.end.litemath"
         }
       ]
     }
