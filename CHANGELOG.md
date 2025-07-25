@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2025-07-25: v1.1.0
+### Miscellaneous
+1. Update `README.md` to migrate the documentation to [MathJax IntelliSense](https://github.com/howcasperwhat/mathjax-intellisense).
+
 ## 2025-06-29: v1.0.3
 ### Breaking Changes
 1. Remove `mathjax-highlight.scopes` option, Now this extension is just a plugin for [Comment Formula](https://github.com/howcasperwhat/comment-formula), and can only be used in combination.
