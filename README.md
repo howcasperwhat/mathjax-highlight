@@ -19,7 +19,7 @@ MathJax · Syntax Highlight
 <a href="https://github.com/howcasperwhat/mathjax-highlight" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/howcasperwhat/mathjax-highlight?style=social"></a>
 <br/>
 <p align="center">
-<a href="https://howcasperwhat.github.io/mathjax-intellisense/extensions/mathjax-highlight.html">📚 Documentation</a>
+<a href="https://howcasperwhat.github.io/mathjax-intellisense/extensions/mathjax-highlight">📚 Documentation</a>
 |
 <a href="https://marketplace.visualstudio.com/items?itemName=howcasperwhat.mathjax-highlight">🛒 Install</a>
 </p>
